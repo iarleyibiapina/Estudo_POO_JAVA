@@ -23,7 +23,7 @@ public class App {
         System.out.println(i[2].getInscrito());
 
         System.out.println("----------------------------------------------------------------");
-        Visualizacao visu[] = new Visualizacao[3];
+        Visualizacao visu[] = new Visualizacao[4];
 
         visu[0] = new Visualizacao(i[0], v[0]);
         visu[1] = new Visualizacao(i[1], v[0]);
@@ -31,6 +31,16 @@ public class App {
         // System.out.println(visu[0].getVideo().like());
         System.out.println(visu[0].getVisualizacao());
         System.out.println(visu[1].getVisualizacao());
+        System.out.println(visu[2].getVisualizacao());
+        System.out.println("----------------------------------------------------------------");
+        // avaliando
+        visu[2] = new Visualizacao(i[2], v[2]);
+        // primeiro caso 
+        // visu[2].avaliar(); 
+        // segundo caso passando int
+        // visu[2].avaliar(4);
+        // terceiro caso passando float / para identificar Float adicionar F no final
+        visu[2].avaliar(47.0f);
         System.out.println(visu[2].getVisualizacao());
     }
 }
