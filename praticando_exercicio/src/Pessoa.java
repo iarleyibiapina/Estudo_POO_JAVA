@@ -4,6 +4,13 @@ public abstract class Pessoa {
     protected char sexo;
     protected int experiencia;
 
+    public Pessoa(String nome, String idade, char sexo){
+        setNome(nome);
+        setIdade(idade);
+        setSexo(sexo);
+        setExperiencia(0);
+    }
+
     public int getExperiencia() {
         return experiencia;
     }
