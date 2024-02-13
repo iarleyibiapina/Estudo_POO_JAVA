@@ -1,7 +1,7 @@
 package Interface;
 
 /**
- * VideoInterface
+ * VideoInterface / Criando Encapsulamento
  */
 public interface VideoInterface {
 

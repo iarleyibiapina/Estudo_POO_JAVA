@@ -11,6 +11,14 @@ public class Video implements VideoInterface{
     private int curtidas;
     private boolean reproduzindo;
 
+    // Construtor é o nome da propria classe
+    public Video(String titulo){
+        setTitulo(titulo);
+        setAvaliacao(0);
+        setViews(0);
+        setReproduzindo(false);
+    }
+
     public void setAvaliacao(float avaliacao) {
         this.avaliacao = avaliacao;
     }
@@ -42,13 +50,25 @@ public class Video implements VideoInterface{
         return reproduzindo;
     }
 
+    // sobrepondo metodos
+    @Override
     public String play(){
         return "Video tocando";
     }
+
+    @Override
     public String pause(){
         return "Video pausado";
     }
+
+    @Override
     public String like(){
         return "total de views agora é " + this.views;
+    }
+
+    // Outras funçoes da class
+    
+    public String statusVideo(){
+        return "Video = titulo:" + getTitulo() + ", avaliacao: " + getAvaliacao() + ", views: " + getViews() + ", curtidas: " + getCurtidas();
     }
 }
