@@ -5,6 +5,8 @@ public class Visualizacao {
     public Visualizacao(Inscrito espectador, Video video){
         setEspectador(espectador);
         setVideo(video);
+        this.video.setViews(1);
+        this.espectador.setTotalVideoAssistido(1);
     }
 
     public void setEspectador(Inscrito espectador) {
