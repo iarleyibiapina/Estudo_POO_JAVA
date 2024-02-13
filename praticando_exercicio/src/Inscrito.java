@@ -29,8 +29,9 @@ public class Inscrito extends Pessoa{
         }
     }
 
+    // Pegando metodos da classe pai
     public String getInscrito()
     {
-        return getNome() + " " + getIdade() + " " + getSexo() + "\n" + getLogin() + " " + getTotalVideoAssistido();
+        return super.getNome() + " " + super.getIdade() + " " + getSexo() + "\n" + getLogin() + " " + getTotalVideoAssistido();
     }
 }

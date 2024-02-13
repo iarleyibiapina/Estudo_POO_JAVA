@@ -7,15 +7,15 @@ public interface VideoInterface {
 
     /**
      * Da play no video
-     * @return String Video Tocando
+     * @return void Video Tocando
      */
-    public String play();
+    public void play();
     /**
      * Da pause no video
      *  
-     * @return String Video Pausado
+     * @return void Video Pausado
      */
-    public String pause();
+    public void pause();
 
     /**
      * Da like no video e retorna novo numero de likes

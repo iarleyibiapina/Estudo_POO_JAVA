@@ -52,22 +52,23 @@ public class Video implements VideoInterface{
 
     // sobrepondo metodos
     @Override
-    public String play(){
-        return "Video tocando";
+    public void play(){
+        setReproduzindo(true);
     }
 
     @Override
-    public String pause(){
-        return "Video pausado";
+    public void pause(){
+        setReproduzindo(false);
     }
 
     @Override
     public String like(){
-        return "total de views agora é " + this.views;
+        this.curtidas++;
+        return "total de curtidas agora é " + this.curtidas;
     }
 
     // Outras funçoes da class
-    
+
     public String statusVideo(){
         return "Video = titulo:" + getTitulo() + ", avaliacao: " + getAvaliacao() + ", views: " + getViews() + ", curtidas: " + getCurtidas();
     }
