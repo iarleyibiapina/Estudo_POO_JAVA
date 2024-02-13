@@ -13,7 +13,7 @@ public class Inscrito extends Pessoa{
         this.login = login;
     }
     public void setTotalVideoAssistido(int totalVideoAssistido) {
-        this.totalVideoAssistido = totalVideoAssistido;
+        this.totalVideoAssistido += totalVideoAssistido;
     }
     public int getTotalVideoAssistido() {
         return totalVideoAssistido;
@@ -32,6 +32,6 @@ public class Inscrito extends Pessoa{
     // Pegando metodos da classe pai
     public String getInscrito()
     {
-        return super.getNome() + " " + super.getIdade() + " " + getSexo() + "\n" + getLogin() + " " + getTotalVideoAssistido();
+        return "nome " + super.getNome() + " idade " + super.getIdade() + " sexo " + getSexo() + " logado " + getLogin() + " total assistido " + getTotalVideoAssistido();
     }
 }
