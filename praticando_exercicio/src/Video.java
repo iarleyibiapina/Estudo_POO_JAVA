@@ -32,7 +32,7 @@ public class Video implements VideoInterface{
         this.titulo = titulo;
     }
     public void setViews(int views) {
-        this.views = views;
+        this.views += views;
     }
     public float getAvaliacao() {
         return avaliacao;
